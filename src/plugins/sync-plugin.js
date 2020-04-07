@@ -655,7 +655,7 @@ const marksToAttributes = marks => {
  * @param {any} pNode
  * @param {ProsemirrorMapping} mapping
  */
-const updateYFragment = (y, yDomFragment, pNode, mapping) => {
+export const updateYFragment = (y, yDomFragment, pNode, mapping) => {
   if (yDomFragment instanceof Y.XmlElement && yDomFragment.nodeName !== pNode.type.name) {
     throw new Error('node name mismatch!')
   }
